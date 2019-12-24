@@ -50,7 +50,7 @@ const Entry = ({ entry, removeEntry }) => {
           <EntryTime>
             {entry.start.toLocaleTimeString()}
             <br/>
-            {timeString(entry.end - entry.start)}
+            {entry.end.toLocaleTimeString()}
           </EntryTime>
           <EntryNote className={entry.note.length === 0 && "empty"}>
             {entry.note}
